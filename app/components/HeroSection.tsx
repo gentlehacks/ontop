@@ -3,7 +3,7 @@ import { motion } from "framer-motion"
 import Image from "next/image";
 import Link from "next/link";
 import { FiFigma } from "react-icons/fi";
-import {  SiCanva } from "react-icons/si";
+import { SiCanva } from "react-icons/si";
 
 // Inline Custom SVGs replacing missing react-icons
 const SiAdobeillustrator = () => (
@@ -81,19 +81,19 @@ const HeroSection = () => {
                     />
                     <ul className="mt-5 flex items-center justify-center gap-5">
                         <li>
-                            <SiAdobephotoshop  />
+                            <SiAdobephotoshop />
                         </li>
                         <li>
-                            <SiAdobeillustrator  />
+                            <SiAdobeillustrator />
                         </li>
                         <li>
-                            <FiFigma  />
+                            <FiFigma />
                         </li>
                         <li>
                             <SiCoreldraw />
                         </li>
                         <li>
-                            <SiCanva  />
+                            <SiCanva />
                         </li>
                     </ul>
                 </motion.div>

@@ -22,7 +22,7 @@ const Footer = ({ showDevModal, setShowDevModal }: { showDevModal: boolean; setS
                 <button
                     onClick={() => setShowDevModal(true)}
                     title="Visit gentlemandev" className="bg-gray-900 text-yellow-500 px-4 py-1 rounded-md hover:bg-gray-800 transition-colors duration-200 cursor-pointer absolute top-[-2rem] left-0 text-center">
-                    <p className="text-sm">Visit</p>
+                    <p className="text-sm">Visit developer!</p>
                 </button>
             </div>
         </footer>

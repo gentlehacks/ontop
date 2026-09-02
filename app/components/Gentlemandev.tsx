@@ -44,7 +44,7 @@ const Gentlemandev = ({ showDevModal, setShowDevModal }: { showDevModal: boolean
             </div>
             <div className="mt-6 flex items-center justify-center">
               <h1 className="text-lg font-bold text-slate-300">Visit My Portfolio:</h1>
-              <Link href="https://gentlemandev.vercel.app" target="_blank" rel="noopener noreferrer" className="ml-4 cursor-pointer">
+              <Link href="https://gentlemandev.vercel.app" target="_blank" rel="noopener noreferer" className="ml-4 cursor-pointer">
                 <button className=" rounded-full bg-cyan-500/10 px-3 py-2 text-cyan-300 transition hover:bg-cyan-500/20">
                   gentlemandev.vercel.app
                 </button>
