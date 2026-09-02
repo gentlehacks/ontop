@@ -99,9 +99,11 @@ const HeroSection = () => {
                 </motion.div>
             </div>
             <div className="md:hidden w-full flex items-center justify-center gap-6 mt-[5rem]">
-                <button className="px-6 py-3 rounded-full border-2 boder-yellow-500 ">Download CV</button>
-                <Link href="/page2">
-                    <button className="px-6 py-3 rounded-full bg-yellow-600 ">Hire Me</button>
+                <Link href="#projects">
+                    <button className="px-6 py-3 rounded-full border-2 boder-yellow-500 ">Explore</button>
+                </Link>
+                <Link href="#contact">
+                    <button className="px-6 py-3 rounded-full bg-yellow-600 ">Contact Me</button>
                 </Link>
 
             </div>
