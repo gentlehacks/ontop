@@ -13,10 +13,12 @@ const Gentlemandev = ({ showDevModal, setShowDevModal }: { showDevModal: boolean
         transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
         className="mx-auto mt-16 w-full max-w-3xl overflow-hidden rounded-t-[2.5rem] border border-white/10 bg-slate-950/95 p-6 text-white shadow-[0_-20px_80px_rgba(56,189,248,0.16)] backdrop-blur-xl sm:p-10"
       >
+        <motion.button onClick={() => setShowDevModal(!showDevModal)}>
+          <FaXmark 
+            className="absolute z-120 right-6 top-6 text-gray-100 transition hover:text-slate-500 cursor-pointer text-2xl flex items-center justify-center"
+          />
+        </motion.button>
 
-        <FaXmark onClick={() => setShowDevModal  (!showDevModal)}
-          className="absolute right-6 top-6 text-gray-100 transition hover:text-slate-500 cursor-pointer text-2xl flex items-center justify-center"
-        />
         <div className="mx-auto mb-8 h-1.5 w-14 rounded-full bg-white/20" />
         <div className="absolute -right-20 -top-20 h-52 w-52 rounded-full bg-cyan-400/10 blur-3xl" />
         <div className="absolute -bottom-24 -left-16 h-48 w-48 rounded-full bg-violet-500/10 blur-3xl" />

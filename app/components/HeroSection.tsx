@@ -55,14 +55,14 @@ const HeroSection = () => {
                                 initial={{ y: 0 }}
                                 whileTap={{ y: "3px" }}
                                 whileHover={{ y: "3px" }}
-                                className="px-6 py-3 rounded-full border-2 boder-yellow-500 cursor-pointer">Explore</motion.button>
+                                className="px-6 py-3 rounded-full border-2 boder-yellow-500 hover:border-yellow-300 cursor-pointer">Explore</motion.button>
                         </Link>
                         <Link href="#contact"  >
                             <motion.button
                                 initial={{ y: 0 }}
                                 whileTap={{ y: "3px" }}
                                 whileHover={{ y: "3px" }}
-                                className="px-6 py-3 rounded-full bg-yellow-600 cursor-pointer ">Contact Me</motion.button>
+                                className="px-6 py-3 rounded-full bg-yellow-600 hover:bg-yellow-500 cursor-pointer ">Contact Me</motion.button>
                         </Link>
                     </div>
                 </motion.div>
@@ -100,10 +100,10 @@ const HeroSection = () => {
             </div>
             <div className="md:hidden w-full flex items-center justify-center gap-6 mt-[5rem]">
                 <Link href="#projects">
-                    <button className="px-6 py-3 rounded-full border-2 boder-yellow-500 ">Explore</button>
+                    <button className="px-6 py-3 rounded-full border-2 boder-yellow-500 cursor-pointer">Explore</button>
                 </Link>
                 <Link href="#contact">
-                    <button className="px-6 py-3 rounded-full bg-yellow-600 ">Contact Me</button>
+                    <button className="px-6 py-3 rounded-full bg-yellow-600 cursor-pointer">Contact Me</button>
                 </Link>
 
             </div>
