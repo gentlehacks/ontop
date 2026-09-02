@@ -27,7 +27,7 @@ const SiCoreldraw = () => (
 const HeroSection = () => {
 
     return (
-        <div className="w-full flex flex-col items-center justify-center mt-[8rem] md:mt-[2rem]">
+        <div className="w-full flex flex-col items-center justify-center mt-[8rem] md:mt-[2rem] px-6 md:px-8">
             <div className="w-full flex flex-col md:flex-row items-center justify-between">
                 <motion.div
                     initial={{ y: "200px", opacity: 0 }}
@@ -50,19 +50,19 @@ const HeroSection = () => {
                         <span className="text-yellow-500">Graphic </span> Designer
                     </h1>
                     <div className="w-full hidden md:flex flex items-center gap-6 mt-[5rem]">
-                        <Link href="/document/cv.docx" target="_blank" rel="noopener noreferer" >
+                        <Link href="#projects"  >
                             <motion.button
                                 initial={{ y: 0 }}
                                 whileTap={{ y: "3px" }}
                                 whileHover={{ y: "3px" }}
-                                className="px-6 py-3 rounded-full border-2 boder-yellow-500 cursor-pointer">Download CV</motion.button>
+                                className="px-6 py-3 rounded-full border-2 boder-yellow-500 cursor-pointer">Explore</motion.button>
                         </Link>
-                        <Link href="linkedin.com/in/iamontop84" target="_blank" rel="noopener noreferer" >
+                        <Link href="#contact"  >
                             <motion.button
                                 initial={{ y: 0 }}
                                 whileTap={{ y: "3px" }}
                                 whileHover={{ y: "3px" }}
-                                className="px-6 py-3 rounded-full bg-yellow-600 cursor-pointer ">Hire Me</motion.button>
+                                className="px-6 py-3 rounded-full bg-yellow-600 cursor-pointer ">Contact Me</motion.button>
                         </Link>
                     </div>
                 </motion.div>

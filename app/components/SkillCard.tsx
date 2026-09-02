@@ -33,7 +33,7 @@ const SkillCard = ({id, name, percent, category}: Props) => {
     return (
         <li key={id} className="relative flex flex-col items-center justify-center p-5 hover:scale-[1.1] 
         transition-all duration-200 backdrop-filter backdrop-blur-lg
-         border-1 border-gray-600 hover:border-yellow-600 rounded-lg shadow-md">
+         border-1 border-gray-600 hover:border-yellow-600 rounded-3xl shadow-md">
             {name == "photoshop" ? (
                 <SiAdobephotoshop  />
             ): name == "illustrator" ? (
@@ -65,4 +65,4 @@ const SkillCard = ({id, name, percent, category}: Props) => {
     )
 }
 
-export default SkillCard;
+export default SkillCard

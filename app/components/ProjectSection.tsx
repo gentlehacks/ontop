@@ -1,6 +1,6 @@
 "use client"
 
-import {motion} from "framer-motion"
+import { motion } from "framer-motion"
 import Image from "next/image"
 import ProjectCard from "./ProjectCard"
 
@@ -55,21 +55,24 @@ const projects = [
 const ProjectSection = () => {
 
     return (
-        <motion.div id="projects" 
-            initial={{y: "200px", opacity: 0}}
-            whileInView={{y: "0", opacity: 1}}
-            transition={{duration: 0.5, ease: 'easeInOut'}}
-        className="pt-[15rem]">
-            <h1 className="text-center font-semibold text-[1.5rem] md:text-[2rem]">Projects</h1>
+        <motion.div id="projects"
+            initial={{ y: "200px", opacity: 0 }}
+            whileInView={{ y: "0", opacity: 1 }}
+            transition={{ duration: 0.5, ease: 'easeInOut' }}
+            className="pt-[15rem] flex-col items-center justify-center px-6 md:px-8">
+            <h1 className="text-center text-[1.8rem] md:text-[2rem] font-semibold">My <span className=" text-yellow-500">Projects</span></h1>
+            <p className="text-center text-gray-300 text-lg md:text-1xl px-6 mt-2">
+                Here are some of my recent projects that showcase my skills and creativity in graphic design.
+            </p>
             <ul className="mt-[4rem] gap-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-                
+
                 {projects.map(project => (
-                    <ProjectCard 
+                    <ProjectCard
                         key={project.id}
                         id={project.id}
                         image={project.image}
-                        name={project.name} 
-                    
+                        name={project.name}
+
                     />
                 ))}
             </ul>

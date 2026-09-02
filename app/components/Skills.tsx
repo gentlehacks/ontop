@@ -43,11 +43,12 @@ const Skills = () => {
             initial={{y: "200px", opacity: 0}}
             whileInView={{y: "0", opacity: 1}}
             transition={{duration: 1, ease: 'easeInOut'}}
-        className="pt-[15rem] flex flex-col mx-auto px-0 md:px-8"> 
-            <h1 className="w-full flex items-center justify-center font-semibold text-[1.5rem] md:text-[2rem] mb-[5rem]">
-                Skills & Technologies
-            </h1>
-            <ul className="mt-[2rem] w-full gap-5 px-5 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5">
+            className="pt-[15rem] flex flex-col mx-auto px-6 md:px-8"> 
+            <h1 className="text-center text-[1.8rem] md:text-[2rem] font-semibold">Sklills and <span className=" text-yellow-500">Technologyy</span></h1>
+            <p className="text-center text-gray-300 text-lg md:text-1xl px-6 mt-2">
+                Here are some of my skills and technologies that I have mastered.
+            </p>
+            <ul className="mt-[4rem] w-full gap-5 px-5 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5">
                 {skills.map(skill => (
                     <SkillCard 
                         key={skill.id}

@@ -9,8 +9,8 @@ const AboutSection = () => {
             initial={{y: "250px", opacity: 0}}
             whileInView={{y: 0, opacity: 1}}
             transition={{duration: 1, ease: 'easeInOut'}}
-        className="pt-[15rem] w-full flex flex-col items-center justify-center">
-            <h1 className="text-[1.5rem] md:text-[2rem] font-semibold">About Me</h1>
+            className="pt-[15rem] w-full flex flex-col items-center justify-center px-6 md:px-8">
+            <h1 className="text-center text-[1.8rem] md:text-[2rem] font-semibold"> <span className=" text-yellow-500">About</span> Me</h1>
             <div className="mt-[5rem] flex flex-col md:flex-row items-center justify-between">
                 <div>
                     <Image 
@@ -23,7 +23,7 @@ const AboutSection = () => {
                     />
                 </div>
                 <div className="flex flex-col">
-                    <div className="p-2 px-3 md:p-3 rounded-xl border-1 border-yellow-600 shadow-md">
+                    <div className="p-2 px-3 md:p-3 rounded-3xl border-1 border-yellow-500 hover:border-yellow-200 transition-border duration-200 shadow-md">
                         <p className="text-xl text-gray-300 leading-[2]">
                             I&apos;m a Nigerian graphic designer specializing in brand identity, digital design, 
                             and visual communication. With experience using 
